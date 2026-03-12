@@ -89,3 +89,52 @@ body {
     transform: scale(1) translateY(0);
   }
 }
+
+.next-btn {
+  margin-top: 2.5rem;
+  padding: 1rem 2.8rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+}
+
+.next-btn.blue {
+  background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  box-shadow: 0 10px 25px -5px rgba(58, 123, 213, 0.4);
+}
+
+.next-btn.yellow {
+  background: linear-gradient(135deg, #fceeb5 0%, #fba100 100%);
+  box-shadow: 0 10px 25px -5px rgba(251, 161, 0, 0.4);
+  color: #2d3436; /* Darker text for better contrast on yellow */
+}
+
+.next-btn.orange {
+  background: linear-gradient(135deg, #FF9966 0%, #FF5E62 100%);
+  box-shadow: 0 10px 25px -5px rgba(255, 94, 98, 0.4);
+}
+
+.next-btn.green {
+  background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+  box-shadow: 0 10px 25px -5px rgba(150, 201, 61, 0.4);
+}
+
+.next-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+
+.next-btn.blue:hover { box-shadow: 0 15px 30px -5px rgba(58, 123, 213, 0.5); }
+.next-btn.yellow:hover { box-shadow: 0 15px 30px -5px rgba(251, 161, 0, 0.5); }
+.next-btn.orange:hover { box-shadow: 0 15px 30px -5px rgba(255, 94, 98, 0.5); }
+.next-btn.green:hover { box-shadow: 0 15px 30px -5px rgba(150, 201, 61, 0.5); }
+
+.next-btn:active {
+  transform: translateY(-1px);
+}
