@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #ffffff;
+  background: radial-gradient(circle at center, #003366, #001a33, #000814);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.idea-text {
+  font-size: clamp(3.5rem, 12vw, 8.5rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: -0.04em;
+  text-shadow: 0 15px 40px rgba(0, 114, 255, 0.4);
+  position: relative;
+}
+
+.idea-text::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(90deg, transparent, #00c6ff, transparent);
+  border-radius: 3px;
+  filter: blur(1px);
+}
+
+.sub-text {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: rgba(0, 198, 255, 0.6);
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
